@@ -1,3 +1,6 @@
 venv
 *.txt
+*.whl
 config.json
+__pycache__
+.ipynb_checkpoints

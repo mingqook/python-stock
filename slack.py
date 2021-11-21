@@ -12,9 +12,7 @@ class SlackMessage:
  
     def post_message(self, text):
 
-        response = requests.post("https://slack.com/api/chat.postMessage",
+        requests.post("https://slack.com/api/chat.postMessage",
             headers={"Authorization": "Bearer " + self.stock_bot_token},
             data={"channel": self.stock_channel_name, "text": text}
         )
-
-        print(response)

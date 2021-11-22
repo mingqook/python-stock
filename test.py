@@ -25,11 +25,14 @@ import os
 
 test = win32com.client.Dispatch('CpTrade.CpTdUtil')
 test.TradeInit()
-print(test.AccountNumber)
-
+# print(test.AccountNumber)
+acc_num_list = [num for num in test.AccountNumber]
+# print(acc_num_list)
 test2 = win32com.client.Dispatch('CpTrade.CpTd6033')
-test2.SetInputValue(0, test.AccountNumber[0])
-print(test2.GetHeaderValue(3))
+test2.SetInputValue(0, acc_num_list[0])
+print(test.GoodsList(acc_num_list[0],-1)) #### 계좌 내 주식 관련 정보 filtering(????)
+test2.BlockRequest()
+print(test2.GetHeaderValue(4))
 
 
 

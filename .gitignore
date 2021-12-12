@@ -1,5 +1,4 @@
 venv
-*.txt
 *.whl
 config.json
 __pycache__

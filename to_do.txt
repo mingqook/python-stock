@@ -1,5 +1,6 @@
 CREON에서 필요 정보 load -> stock_info_creon.py
 API 구축 -> fastapi 활용
+slack 메세지 연동
 몇 가지 전략들 구축 -> 널리 알려진 대표적인 방법들부터 ex) 모멘텀, pair 등등
 backtesting 구축
 코드 리팩토링
